@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Simple Down Chat</title>
+  </head>
+  <body>
+    <!-- BEM convention -->
+    <section class="simpleChat">
+      <div class="simpleChat__brand">
+        <img
+          src="https://cdn.iconscout.com/icon/free/png-256/chat-2130787-1794829.png"
+          alt="Brand Icon"
+        />
+        <h1>SimpleDownChat</h1>
+      </div>
+      <div class="simpleChat__messageArea">
+        <!-- we are fetching dynamic so i have comment -->
+        <!-- this is hardcode -->
+
+        <!-- <div
+          class="
+            simpleChat__messageArea__incoming simpleChat__messageArea--message
+          "
+        >
+          <h4>Prince</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            vero. Ipsam beatae neque ut error doloribus nobis, eius ducimus
+            similique maiores? Labore expedita nam quod quas veritatis
+            distinctio doloribus maiores.
+          </p>
+        </div>
+
+        <div
+          class="
+            simpleChat__messageArea__outgoing simpleChat__messageArea--message
+          "
+        >
+          <h4>Prince</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            vero. Ipsam beatae neque ut error doloribus nobis, eius ducimus
+            similique maiores? Labore expedita nam quod quas veritatis
+            distinctio doloribus maiores.
+          </p>
+        </div>
+
+        <div
+          class="
+            simpleChat__messageArea__outgoing simpleChat__messageArea--message
+          "
+        >
+          <h4>Prince</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            vero. Ipsam beatae neque ut error doloribus nobis, eius ducimus
+            similique maiores? Labore expedita nam quod quas veritatis
+            distinctio doloribus maiores.
+          </p>
+        </div> -->
+      </div>
+      <!-- typing animation -->
+      <span class="messageArea__typing"></span>
+
+      <div>
+        <textarea
+          name=""
+          id="textarea"
+          cols="30"
+          rows="1"
+          placeholder="Write a message..😁😀😊"
+        ></textarea>
+      </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
